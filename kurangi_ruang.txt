@@ -1,0 +1,9 @@
+trigger name: kurangi_ruang
+table: bayar
+time: after
+event: insert
+source code:
+BEGIN
+UPDATE banyak_ruang
+SET banyak=banyak-1;
+END

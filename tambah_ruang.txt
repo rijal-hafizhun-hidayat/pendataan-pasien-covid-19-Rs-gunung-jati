@@ -1,0 +1,10 @@
+trigger di tabble bayar
+trigger name: tambah_ruang
+table: bayar
+time: after
+event: delete
+source code:
+BEGIN
+UPDATE banyak_ruang
+SET banyak=banyak+1;
+END
